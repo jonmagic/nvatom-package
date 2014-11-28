@@ -7,6 +7,9 @@ module.exports = function(grunt) {
     // Configure a mochaTest task
     mochaTest: {
       test: {
+        options: {
+          ui: "tdd"
+        },
         src: ['test/**/*.js']
       }
     }
