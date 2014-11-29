@@ -7,6 +7,7 @@
     "minitest": "ysbaddaden/minitest-js"
   },
   "dependencies": {
+    "fs-plus": "2.3.2",
     "lunr": "0.5.5"
   }
 }
