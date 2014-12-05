@@ -1,0 +1,9 @@
+#search {
+  display: block;
+  font-size: 24px;
+  margin: 10px;
+}
+
+#document-list {
+  background-color: #eee;
+}
