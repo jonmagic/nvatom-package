@@ -1,11 +1,7 @@
 {
   "name"    : "NVatom",
   "version" : "1.0.0",
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-mocha-test": "0.12.4",
-    "minitest": "ysbaddaden/minitest-js"
-  },
+  "main" : "index.js",
   "dependencies": {
     "fs-plus": "^2.3.2",
     "lunr": "0.5.5"
