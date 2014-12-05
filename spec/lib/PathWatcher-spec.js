@@ -1,5 +1,5 @@
 var fs = require("fs-plus");
-var PathWatcher = require("../lib/PathWatcher");
+var PathWatcher = require("../../lib/PathWatcher");
 var foo = __dirname + "/foo.md"
 
 describe("PathWatcher", function() {
