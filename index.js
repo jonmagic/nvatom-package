@@ -1,13 +1,22 @@
+var React = require("atom").React;
+var App = require("./lib/components/App");
+
 module.exports = {
   activate: function(state) {
     atom.commands.add("atom-workspace", "nvatom:toggle", function() {
-      var workspaceElement = atom.views.getView(atom.workspace);
-      workspaceElement.style.display = "none";
+      var atomWorkspaceElement = atom.views.getView(atom.workspace);
+      atomWorkspaceElement.style.display = "none";
 
-      var containerElement = document.createElement("div");
-      containerElement.setAttribute("id", "nvatom-container");
-      document.body.appendChild(containerElement);
-    })
+      var nvAtomWorkspaceComponent = document.registerElement('nvatom-workspace', {
+        prototype: Object.create(HTMLButtonElement.prototype)
+      });
+      var nvAtomWorkspaceElement = new nvAtomWorkspaceComponent;
+
+      nvAtomWorkspaceElement.setAttribute("id", "nvatom-workspace");
+      document.body.appendChild(nvAtomWorkspaceElement);
+
+      React.renderComponent(App(), nvAtomWorkspaceElement);
+    });
   },
 
   deactivate: function() {

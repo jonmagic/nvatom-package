@@ -1,9 +1,26 @@
-#search {
-  display: block;
-  font-size: 24px;
-  margin: 10px;
+.nvatom-container {
+  clear: both;
+  position: relative;
 }
 
-#document-list {
+.nvatom-document-search-and-create {
+  background-color: #666;
+  padding: 1.1em 1em;
+  position: relative;
+}
+
+.nvatom-document-search-and-create input {
+  font-size: 1.4em;
+  width: 100%;
+}
+
+.nvatom-document-list {
   background-color: #eee;
+  float: left;
+  width: 16%;
+}
+
+.nvatom-document-editor {
+  background-color: #333;
+  margin-left: 16%;
 }
