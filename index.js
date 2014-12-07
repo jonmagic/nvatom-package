@@ -8,7 +8,7 @@ module.exports = {
       atomWorkspaceElement.style.display = "none";
 
       var nvAtomWorkspaceComponent = document.registerElement('nvatom-workspace', {
-        prototype: Object.create(HTMLButtonElement.prototype)
+        prototype: Object.create(HTMLDivElement.prototype)
       });
       var nvAtomWorkspaceElement = new nvAtomWorkspaceComponent;
 
