@@ -14,7 +14,6 @@ module.exports = {
 
   },
 
-  serliaze: function() {
-
+  serialize: function() {
   }
 }
