@@ -1,8 +1,8 @@
-# nvAtom
+# nvatom
 
 **This is a work in progress, features described aren't necessarily implemented yet.**
 
-This Atom package is all about taking notes and then using what you've written. From journal entries, to emails, to lists, nvAtom makes writing and using your notes simple and fast.
+This Atom package is all about taking notes and then using what you've written. From journal entries, to emails, to lists, nvatom makes writing and using your notes simple and fast.
 
 Navigate your notes like you surf the web. The search bar at the top is universal search for your notes and the search results are displayed instantly with each key press.
 
@@ -10,7 +10,7 @@ Create rich notes with Markdown and take things a step further with GitHub Flavo
 
 Selectively publish notes as public or private [Gists](https://gist.github.com).
 
-nvAtom was inspired by [Notational Velocity](http://notational.net) and [nvALT](http://brettterpstra.com/projects/nvalt/) and is built on top of [Atom](https://atom.io).
+nvatom was inspired by [Notational Velocity](http://notational.net) and [nvALT](http://brettterpstra.com/projects/nvalt/) and is built on top of [Atom](https://atom.io).
 
 ## TODO
 
