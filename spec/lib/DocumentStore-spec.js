@@ -1,4 +1,4 @@
-var DocumentStore = require("../../../lib/stores/DocumentStore");
+var DocumentStore = require("../../lib/DocumentStore");
 
 var invalid = {
   filename: "invalid.md"
