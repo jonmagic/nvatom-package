@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "nvatom",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "nvatom:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
