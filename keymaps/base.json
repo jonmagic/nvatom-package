@@ -1,0 +1,5 @@
+{
+  "nvatom-search-bar atom-text-editor": {
+    "enter": "nvatom:search"
+  }
+}
