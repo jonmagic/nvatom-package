@@ -1,22 +1,13 @@
 var App = require("./lib/App");
 
 module.exports = {
-  activate: function(state) {
-    App.setState(state);
-
+  activate: function() {
     atom.commands.add("atom-workspace", "nvatom:toggle", function() {
       if(App.attached){
-        App.stop(state);
+        App.stop();
       }else{
-        App.start(state);
+        App.start();
       }
     });
-  },
-
-  deactivate: function() {
-  },
-
-  serialize: function() {
-    return App.getState();
   }
 }
