@@ -1,5 +1,17 @@
 {
+  "atom-text-editor": {
+    "cmd-l": "unset!"
+  },
+
   "nvatom-search-bar atom-text-editor": {
     "enter": "nvatom:search"
+  },
+
+  ".platform-darwin": {
+    "cmd-l": "nvatom:focus-search"
+  },
+
+  ".platform-win32, .platform-linux": {
+    "ctrl-l": "nvatom:focus-search"
   }
 }
