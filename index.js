@@ -5,7 +5,7 @@ module.exports = {
     App.setState(state);
 
     atom.commands.add("atom-workspace", "nvatom:toggle", function() {
-      if(App.activated){
+      if(App.attached){
         App.stop(state);
       }else{
         App.start(state);
