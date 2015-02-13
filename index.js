@@ -1,30 +1,16 @@
 "use 6to5";
-let App = require("./lib/App");
-let app;
-
-let toggleApp = () => {
-  if(app.state.attached){
-    console.log("stopping app");
-    app.stop();
-  }else{
-    console.log("starting app");
-    app.start();
-  }
-}
+let NVAtom = require("./lib/NVAtom");
 
 exports.activate = (state) => {
-  app = new App(state);
-  atom.commands.add("atom-workspace", "nvatom:toggle", toggleApp);
-
-  return app;
+  atom.nvatom = new NVAtom(state);
+  atom.nvatom.addAtomCommands();
 }
 
 exports.serialize = () => {
-  return app.state;
+  return atom.nvatom.state;
 }
 
 exports.deactivate = () => {
-  app = null;
-
-  return app;
+  atom.nvatom.removeAtomCommands();
+  delete atom.nvatom;
 }
