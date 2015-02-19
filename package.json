@@ -1,7 +1,7 @@
 {
   "name": "nvatom",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/main.js",
   "dependencies": {
     "fs-plus": "^2.3.2",
     "lodash": "~2.4.1",
